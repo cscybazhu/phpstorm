@@ -1,0 +1,9 @@
+{
+  "languageoid": "0x0400001F",
+  "languageoption": [
+    "cn",
+    "en"
+  ],
+  "usernameoid": "0x01010007",
+  "passwordoid": "0x01010008"
+}

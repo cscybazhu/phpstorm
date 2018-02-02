@@ -1,0 +1,42 @@
+<div id="masthead">
+
+    <div class="container">
+
+        <div class="masthead-pad">
+
+            <div class="masthead-text">
+                <h2>{{location[0] | translate}}</h2>
+                <p>{{location[0]+"info" | translate}}</p>
+
+            </div> <!-- /.masthead-text -->
+
+        </div>
+
+    </div> <!-- /.container -->
+
+</div> <!-- /#masthead -->
+<div id="content">
+
+    <overview over-view="overView" ng-if="location[0]=='main'"></overview>
+
+    <div class="container" ng-cloak ng-if="location[0]!='main'">
+
+        <div class="row">
+
+            <div class="span3">
+                <pagetree head-tree="headTree"></pagetree>
+            </div>
+
+            <div class="span9">
+                <div ui-view="config"></div>
+            </div> <!-- /.span12 -->
+
+        </div> <!-- /.row -->
+
+    </div> <!-- /.container -->
+
+</div> <!-- /#content -->
+
+
+
+

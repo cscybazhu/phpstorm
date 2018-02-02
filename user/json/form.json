@@ -1,0 +1,425 @@
+[
+  {
+    "program": "dhcp",
+    "type": "form",
+    "label": "dhcp",
+    "name": 0,
+    "pattern": 0,
+    "min": 0,
+    "max": 0,
+    "show": 0,
+    "oid": 0,
+    "option": 0,
+    "readonly": 0
+  },
+  {
+    "program": "dhcp",
+    "type": "checkbox",
+    "label": "dhcp",
+    "name": "enable",
+    "pattern": 0,
+    "min": 0,
+    "max": 0,
+    "show": 1,
+    "oid": "0x01010006",
+    "option": [
+      "open"
+    ],
+    "readonly": 0,
+    "info": "open"
+  },
+  {
+    "program": "dhcp",
+    "type": "span",
+    "label": "lanip",
+    "name": "lanip",
+    "pattern": "ip",
+    "min": 10,
+    "max": 110,
+    "show": 1,
+    "oid": "0x01010007",
+    "option": 0,
+    "readonly": 1,
+    "info": "ip"
+  },
+  {
+    "program": "dhcp",
+    "type": "text",
+    "label": "startip",
+    "name": "startip",
+    "pattern": 0,
+    "min": 0,
+    "max": 60,
+    "show": 1,
+    "oid": "0x01020001",
+    "option": 0,
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "dhcp",
+    "type": "password",
+    "label": "endip",
+    "name": "endip",
+    "pattern": "string",
+    "min": 1,
+    "max": 100,
+    "show": 1,
+    "oid": "0x01010008",
+    "option": 0,
+    "readonly": 0,
+    "info": 0
+  },
+  {
+    "program": "dhcp",
+    "type": "select",
+    "label": "mode1",
+    "name": "mode1",
+    "pattern": 0,
+    "min": 0,
+    "max": 0,
+    "show": {
+      "endip": [
+        "1.1.1.1",
+        2
+      ]
+    },
+    "oid": "0x01010005",
+    "readonly": 0,
+    "option": [
+      "dynamicip",
+      "staticip",
+      "pppoe"
+    ],
+    "info": "s"
+  },
+  {
+    "program": "dhcp",
+    "type": "radio",
+    "label": "mode",
+    "name": "mode",
+    "pattern": 0,
+    "min": 0,
+    "max": 0,
+    "show": 1,
+    "oid": "0x01010004",
+    "readonly": 0,
+    "option": [
+      "dynamicip",
+      "staticip",
+      "pppoe"
+    ],
+    "info": "s"
+  },
+  {
+    "program": "dhcp",
+    "type": "text",
+    "label": "endip2",
+    "name": "enable2",
+    "pattern": "ip",
+    "min": 0,
+    "max": 0,
+    "show": 1,
+    "oid": "0x01010007",
+    "option": 0,
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "wan",
+    "type": "form",
+    "label": "wan",
+    "name": 0,
+    "pattern": 0,
+    "min": 0,
+    "max": 0,
+    "show": 0,
+    "oid": 0,
+    "option": 0,
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "wan",
+    "type": "select",
+    "label": "mode1",
+    "name": "mode1",
+    "pattern": 0,
+    "min": 0,
+    "max": 0,
+    "show": 1,
+    "oid": "0x01010005",
+    "readonly": 0,
+    "option": [
+      "dynamicip",
+      "staticip",
+      "pppoe"
+    ],
+    "info": "s"
+  },
+  {
+    "program": "wan",
+    "type": "text",
+    "label": "dhcp",
+    "name": "enable",
+    "pattern": 0,
+    "min": 0,
+    "max": 10,
+    "show": 1,
+    "oid": "0x01010008",
+    "option": 0,
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "wan",
+    "type": "text",
+    "label": "dhcp1",
+    "name": "enable1",
+    "pattern": "string",
+    "min": 10,
+    "max": 100,
+    "show": 1,
+    "oid": "0x01010008",
+    "option": 0,
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "wan",
+    "type": "text",
+    "label": "dhcp2",
+    "name": "enable2",
+    "pattern": "nochinese",
+    "min": 0,
+    "max": 10,
+    "show": 1,
+    "oid": "0x01010007",
+    "option": 0,
+    "readonly": 0
+  },
+  {
+    "program": "software",
+    "type": "form",
+    "label": "reboot",
+    "name": 0,
+    "pattern": 1,
+    "min": "icon-check",
+    "max": "reboot",
+    "show": 0,
+    "oid": 0,
+    "option": 0,
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "software",
+    "type": "form",
+    "label": "restore",
+    "name": 0,
+    "pattern": 1,
+    "min": "icon-check",
+    "max": "restore",
+    "show": 0,
+    "oid": 0,
+    "option": "restore",
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "software",
+    "type": "form",
+    "label": "software",
+    "name": "software",
+    "pattern": 1,
+    "min": "icon-upload-alt",
+    "max": "software",
+    "show": 1,
+    "oid": 0,
+    "option": 0,
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "software",
+    "type": "file",
+    "label": "select",
+    "name": "filename",
+    "pattern": 0,
+    "min": 0,
+    "max": 0,
+    "show": 1,
+    "oid": 0,
+    "option": 0,
+    "readonly": 0,
+    "info": 0
+  },
+  {
+    "program": "band",
+    "type": "form",
+    "label": "band",
+    "name": 0,
+    "pattern": 0,
+    "min": 0,
+    "max": 0,
+    "show": 0,
+    "oid": 0,
+    "option": 0,
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "band",
+    "type": "checkbox",
+    "label": "dhcp",
+    "name": "enable",
+    "pattern": 0,
+    "min": 0,
+    "max": 10,
+    "show": 1,
+    "oid": "0x01010008",
+    "option": [
+      "open"
+    ],
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "band",
+    "type": "checkbox",
+    "label": "language",
+    "name": "enable3",
+    "pattern": 0,
+    "min": 0,
+    "max": 10,
+    "show": 1,
+    "oid": "0x01010008",
+    "option": [
+      "cn",
+      "en",
+      "open",
+      65,
+      34
+    ],
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "sim",
+    "type": "form",
+    "label": "list",
+    "name": 0,
+    "pattern": 0,
+    "min": 0,
+    "max": 0,
+    "show": 0,
+    "oid": 0,
+    "option": 0,
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "sim",
+    "type": "table",
+    "label": "dhcp",
+    "name": "enable1",
+    "pattern": 0,
+    "min": 4,
+    "max": 10,
+    "show": 1,
+    "oid": [
+      [
+        "0x17041002"
+      ],
+      [
+        "0x17030001",
+        "0x17030010",
+        1
+      ],
+      [
+        "0x17040001",
+        "0x17040010",
+        0
+      ],
+      [
+        "0x17030001",
+        "0x17030010",
+        1
+      ]
+    ],
+    "option": [
+      "index",
+      "mac",
+      "name",
+      "info"
+    ],
+    "readonly": 0,
+    "info": "no"
+  },
+  {
+    "program": "password",
+    "type": "form",
+    "label": "passwordMan",
+    "name": 0,
+    "pattern": 1,
+    "min": "icon-check",
+    "max": "save",
+    "show": 0,
+    "oid": 0,
+    "option": 0,
+    "readonly": 0,
+    "info": "s"
+  },
+  {
+    "program": "password",
+    "type": "text",
+    "label": "currentUsername",
+    "name": "currentUsername",
+    "pattern": "nochinese",
+    "min": 1,
+    "max": 65,
+    "show": 1,
+    "oid": "0x01010007",
+    "option": 0,
+    "readonly": 0
+  },
+  {
+    "program": "password",
+    "type": "password",
+    "label": "currentPwd",
+    "name": "currentPwd",
+    "pattern": "nochinese",
+    "min": 1,
+    "max": 65,
+    "show": 1,
+    "oid": "0x01010008",
+    "option": 0,
+    "readonly": 0
+  },
+  {
+    "program": "password",
+    "type": "password",
+    "label": "newPwd",
+    "name": "newPwd",
+    "pattern": "password",
+    "min": 0,
+    "max": 10,
+    "show": 1,
+    "oid": "0x01010008",
+    "option": 0,
+    "readonly": 0
+  },
+  {
+    "program": "password",
+    "type": "password",
+    "label": "conPwd",
+    "name": "conPwd",
+    "pattern": "password",
+    "min": 0,
+    "max": 10,
+    "show": 1,
+    "oid": "0x01010008",
+    "option": 0,
+    "readonly": 0
+  }
+]

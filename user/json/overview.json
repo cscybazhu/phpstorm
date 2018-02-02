@@ -1,0 +1,47 @@
+[
+  {
+    "title": "load",
+    "name": "rsrp",
+    "oid": "0x01010008"
+  },
+  {
+    "title": "load",
+    "name": "rsrq",
+    "oid": "0x01020001"
+  },
+  {
+    "title": "lte",
+    "name": "rsrp",
+    "oid": "0x01010008"
+  },
+  {
+    "title": "lte",
+    "name": "rsrq",
+    "oid": "0x01020001"
+  },
+  {
+    "title": "lte",
+    "name": "rsrq",
+    "oid": "0x01020001"
+  },
+  {
+    "title": "lte",
+    "name": "rsrp",
+    "oid": "0x01020001"
+  },
+  {
+    "title": "lte",
+    "name": "rsrp",
+    "oid": "0x01010008"
+  },
+  {
+    "title": "network",
+    "name": "rsrp",
+    "oid": "0x01010008"
+  },
+  {
+    "title": "network",
+    "name": "rsrp",
+    "oid": "0x01010008"
+  }
+]

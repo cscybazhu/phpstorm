@@ -1,0 +1,66 @@
+[
+  {
+    "name": "main",
+    "sref": "main",
+    "icon": "icon-home",
+    "second": 0
+  },
+  {
+    "name": "network",
+    "sref": "network",
+    "icon": "icon-globe",
+    "second": [
+      {
+        "name": "dhcp",
+        "icon": "icon-home",
+        "sref": "network.dhcp"
+      },
+      {
+        "name": "wan",
+        "icon": "icon-home",
+        "sref": "network.wan"
+      }
+    ]
+  },
+  {
+    "name": "lte",
+    "sref": "lte",
+    "icon": "icon-home",
+    "second": [
+      {
+        "name": "band",
+        "icon": "icon-star",
+        "sref": "lte.band"
+      }
+    ]
+  },
+  {
+    "name": "advanced",
+    "sref": "advanced",
+    "icon": "icon-cogs",
+    "second": [
+      {
+        "name": "sim",
+        "icon": "icon-star",
+        "sref": "advanced.sim"
+      }
+    ]
+  },
+  {
+    "name": "system",
+    "sref": "system",
+    "icon": "icon-cogs",
+    "second": [
+      {
+        "name": "software",
+        "icon": "icon-star",
+        "sref": "system.software"
+      },
+      {
+        "name": "passwordMan",
+        "icon": "icon-star",
+        "sref": "system.password"
+      }
+    ]
+  }
+]

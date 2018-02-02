@@ -1,0 +1,86 @@
+<!doctype html><!--[if lt IE 7]>
+<html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]--><!--[if IE 7]>
+<html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]--><!--[if IE 8]>
+<html class="no-js lt-ie9" lang="en"> <![endif]--><!--[if gt IE 8]><!-->
+<html class="no-js" lang="en"> <!--<![endif]-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta charset="utf-8"/>
+    <title>Login</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/font-awesome.css">
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+
+    <link rel="stylesheet" href="./css/ui-lightness/jquery-ui-1.8.21.custom.css">
+
+    <link rel="stylesheet" href="css/application.css">
+    <link rel="stylesheet" href="css/toastr.min.css"/>
+
+    <!--[if IE 8]>
+    <script src="js/es5-shim.min.js"></script>
+    <![endif]-->
+    <script src="js/libs/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="js/angular.min.js"></script>
+
+</head>
+
+<body class="login" id="ng-app" ng-app="login" ng-controller="logincontroller" ng-cloak onload=" DataTest();">
+<div style="" class="loading hide"><span><div class="loading-img"></div>{{"registerProcessWebsing" | translate}}</span>
+</div>
+
+<div class="account-container login stacked" ng-cloak>
+
+    <div class="content clearfix">
+        <h5 id="labels-badges" style="float:right">
+            <span ng-repeat="(y,x) in languageoption" class="{{language | languageClass:x}}"
+                  ng-click="switchLanguage(x);" style="cursor: pointer">{{x | translate}}</span>
+        </h5>
+        <form action="./goform/SetLoginAuth" method="post" name="loginForm">
+
+            <h1 id="login">{{"login" | translate | uppercase}}</h1>
+
+            <div class="login-fields">
+
+                <p id="account">{{"logincount" | translate}}<span style="color:red" ng-show="loginerror">{{"loginerror" | translate}}</span>
+                </p>
+
+                <div class="field">
+                    <label for="username" id="usernamelabel">{{"loginusername" | translate}}</label>
+                    <input type="text" id="username" name="username" ng-model="loginValue.username"
+                           placeholder="username" class="login username-field" maxlength="65" autofocus/>
+                </div> <!-- /field -->
+
+                <div class="field">
+                    <label for="password" id="passwordlabel">{{"loginpassword" | translate}}</label>
+                    <input type="password" id="password" name="password" ng-model="loginValue.password"
+                           placeholder="password" class="login password-field" maxlength="65"/>
+                </div> <!-- /password -->
+
+            </div> <!-- /login-fields -->
+
+            <div class="login-actions">
+
+                <button type="button" class="button btn btn-primary btn-large" ng-click="login()" id="loginbutton">
+                    {{"login" | translate | uppercase}}
+                </button>
+
+            </div>
+        </form>
+
+    </div> <!-- /content -->
+
+</div> <!-- /account-container -->
+
+<script src="js/md5.js"></script>
+<script src="js/libs/bootstrap/bootstrap.min.js"></script>
+<script src="js/toastr.min.js"></script>
+<script type="text/javascript" src="js/angular-translate.js"></script>
+<script type="text/javascript" src="js/angular-translate-loader-static-min.js"></script>
+<script type="text/javascript" src="myjs/global.js?v=20171125"></script>
+</body>
+</html>

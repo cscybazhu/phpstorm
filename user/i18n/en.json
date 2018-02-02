@@ -1,0 +1,20 @@
+{
+  "logout": "LOGOUT",
+  "login": "login",
+  "en": "English",
+  "cn": "Chinese",
+  "logincount": "Your account:",
+  "loginusername": "Username",
+  "loginpassword": "Password",
+  "network": "NETWORK",
+  "networkinfo": "NETWORK",
+  "main": "MAIN",
+  "advanced": "ADVANCED",
+  "advancedinfo": "ADVANCED",
+  "maininfo": "MAIN",
+  "system": "SYATEM",
+  "systeminfo": "SYATEM",
+  "lte": "LTE",
+  "lteinfo": "LTE",
+  "dhcp": "DHCP"
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "sref": "network",
+    "url": "/network"
+  },
+  {
+    "sref": "network.dhcp",
+    "url": "/dhcp"
+  },
+  {
+    "sref": "network.wan",
+    "url": "/wan"
+  },
+  {
+    "sref": "lte",
+    "url": "/lte"
+  },
+  {
+    "sref": "lte.band",
+    "url": "/band"
+  },
+  {
+    "sref": "advanced",
+    "url": "/advanced"
+  },
+  {
+    "sref": "advanced.sim",
+    "url": "/sim"
+  },
+  {
+    "sref": "system",
+    "url": "/system"
+  },
+  {
+    "sref": "system.software",
+    "url": "/software"
+  },
+  {
+    "sref": "system.password",
+    "url": "/password"
+  }
+]
